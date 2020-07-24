@@ -4,9 +4,9 @@ public class Bicycle {
 
     // the Bicycle class has
     // three fields
-    public int gear;
-    public int speed;
-    public int cadence;
+    private int gear;
+    private int speed;
+    private int cadence;
 
     // the Bicycle class has one constructor
     public Bicycle(int cadence, int gear, int speed)
@@ -35,6 +35,22 @@ public class Bicycle {
     public void speedUp(int increment)
     {
         speed += increment;
+    }
+
+    // access the fields
+    public int getGear()
+    {
+        return gear;
+    }
+
+    public int getSpeed()
+    {
+        return speed;
+    }
+
+    public int getCadence()
+    {
+        return cadence;
     }
 
 }
